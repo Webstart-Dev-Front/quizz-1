@@ -79,9 +79,9 @@ const library = {
 
 function canIBorrowThisBook(book) {
   if(library.hasOwnProperty(book)) {
-    if(book.values()==true) {
+    if(library[book].available==true) {
       return `Yes, we do have ${book}, and it is available.`
-    } else if(book.values()==false) {
+    } else if(library[book].available==false) {
       return `Yes, we do have ${book}, but it isn't available currently.`
     }
   } else {
@@ -89,7 +89,7 @@ function canIBorrowThisBook(book) {
   }
 }
 
-result = canIBorrowThisBook("braveNewWorld")
+result = canIBorrowThisBook("theHungerGames")
 console.log(result)
 
 
