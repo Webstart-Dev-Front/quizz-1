@@ -1,5 +1,5 @@
 console.log(`QUIZZ - 1`)
-// Créer une branche quizz1/[PRENOM]-[NOM]
+// Créer une branche quizz1/[PRENOM]-[NOM] à partir de master
 
 
 // 1 - Write a function that capitalizes the first letter of a word
