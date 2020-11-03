@@ -79,9 +79,9 @@ const library = {
 
 function canIBorrowThisBook(book) {
   if(library.hasOwnProperty(book)) {
-    if(library.book.available==true) {
+    if(book.values()==true) {
       return `Yes, we do have ${book}, and it is available.`
-    } else if(library.book.available==false) {
+    } else if(book.values()==false) {
       return `Yes, we do have ${book}, but it isn't available currently.`
     }
   } else {
