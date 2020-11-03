@@ -101,7 +101,6 @@ function isItAvailable(name) {
     }
   }
   return "The library doesn't have this book"
-  
 }
 
 console.log(isItAvailable('theHungerGames'))
