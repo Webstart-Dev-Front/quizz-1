@@ -97,12 +97,17 @@ function isItAvailable(name) {
   var length = Object.keys(library).length
   for (let i = 0; i < length; i++) {
     if (Object.keys(library)[i] == name) {
-      return Object.values(library)[i]
+      var book = Object.values(library)[i]
+      var status = Object.values(book)
+      if (status == 'true') {
+        return 'This book is available'
+      }
+      return 'This book was borrowed'
     }
   }
   return "The library doesn't have this book"
 }
 
-console.log(isItAvailable('theHungerGames'))
+console.log(isItAvailable('theMartian'))
 
 // Pusher
